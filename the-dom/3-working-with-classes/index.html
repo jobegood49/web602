@@ -3,23 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selecting Elements</title>
+    <title>Working with classes</title>
   </head>
   <body>
-    <div class="items">
-      <div class="item">
-        <img src="https://source.unsplash.com/random/300x300" alt="" />
-        <p>Hi I'm a item</p>
-      </div>
+    <img
+      class="current-image visisble"
+      src="https://source.unsplash.com/random/600x600"
+      alt=""
+    />
 
-      <div class="item item2">
-        <h2>Sub Div</h2>
-        <img src="https://source.unsplash.com/random/300x300" alt="" />
-        <p>I'm a item &#128520</p>
-        <span >&#128578;</span>
-
-      </div>
-    </div>
+    <style>
+      img {
+        transition: all 0.2s;
+      }
+      .round {
+        border-radius: 50%;
+      }
+    </style>
 
     <script src="./working-with-classes.js"></script>
   </body>
